@@ -1,0 +1,36 @@
+body {
+    background-image: url(../Images/moon-2776955_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+.ditails-two {
+    position: relative;
+}
+
+#conditionIcon,
+#conditionIconTwo,
+#conditionIconThree {
+    width: 120px;
+}
+
+#currentDegree,
+.degree {
+    font-size: 4rem;
+}
+
+.borderline {
+    position: relative;
+}
+
+.borderline::after {
+    content: '';
+    width: 3px;
+    height: 100%;
+    top: -15px;
+    right: 0;
+    background-color: #e6e4e4;
+    position: absolute;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Weather</title>
+</head>
+
+<body>
+
+  <div class="parent z-1 position-absolute top-0 start-0 bottom-0 end-0 d-flex justify-content-between flex-column">
+
+    <div class="container">
+
+      <div class="row pt-2">
+
+        <div class="col-md-5 order-sm-last order-md-first mb-5 mt-sm-5">
+          <div class="ditails-one pb-3">
+            <h1 id="region" class=" text-capitalize text-warning">al-qahirah</h1>
+            <h4 class="fw-semibold text-white text-capitalize">date: <span class="fw-normal fs-5"
+                id="dateOfToday">2-1-2024</span></h4>
+            <h4 class="fw-semibold text-white text-capitalize">last update: <span class="fw-normal fs-5"
+                id="lastUpdate">2-1-2024 00:30</span></h4>
+          </div>
+          <div class="ditails-two pt-3 mt-5">
+            <div class="win d-flex align-items-center mb-5">
+              <span class="bg-dark px-3 py-1 rounded-5"><i class="fa-solid fa-wind text-white"></i></span>
+              <h4 class="text-white text-capitalize ms-2">wind speed: <span class="fw-normal fs-5"
+                  id="windSpeed">3.6k/h</span>
+              </h4>
+            </div>
+            <div class="win d-flex align-items-center mb-5">
+              <span class="bg-dark px-3 py-1 rounded-5"><i class="fa-solid fa-droplet text-white"></i></span>
+              <h4 class="text-white text-capitalize ms-2">humidity: <span class="fw-normal fs-5"
+                  id="humidity">77%</span>
+              </h4>
+            </div>
+            <div class="win d-flex align-items-center">
+              <span class="bg-dark px-3 py-1 rounded-5"><i class="fa-solid fa-cloud text-white"></i></span>
+              <h4 class="text-white text-capitalize ms-2">cloud: <span class="fw-normal fs-5" id="cloud">0%</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 offset-md-2 order-sm-first order-md-last text-md-end pb-3 pt-sm-5">
+          <div class="details-three text-sm-center text-md-end">
+            <h1 id="country" class="text-capitalize text-warning fw-bold">e g y p t</h1>
+            <h3 class="text-md-end text-capitalize text-white mb-3 fs-2" id="nameOfTheCity">cairo</h3>
+            <input type="text" class="form-control bg-dark border border-primary m-sm-auto  ms-md-auto text-white"
+              id="city">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="bg-transparent">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-6 borderline d-flex align-items-center flex-md-row flex-sm-column">
+            <div class="condition me-4 text-center" id="condition">
+              <p id="conditionText" class="text-warning fw-semibold fs-4 m-0">mist</p>
+              <img src="Images/day/113.png" alt="" id="conditionIcon">
+            </div>
+            <div class="current  text-center ms-4">
+              <div class="currentDetails">
+                <span class="bg-danger px-3 py-1 rounded-5 text-white text-capitalize fw-semibold">today</span>
+                <h2 class="degree text-warning mt-3 mb-3"><span id="currentDegree">12</span><sup>o</sup>C
+                </h2>
+                <div class="mimax d-flex justify-content-center align-items-center">
+                  <p class="text-white me-1">Min: <span id="currMinDay">16</span><sup>o</sup>C</p>
+                  <p class="text-white ms-1">Max: <span id="currMaxDay">24</span><sup>o</sup>C</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 borderline">
+            <div class="forcastDayOne text-center" id="forcastDayOne">
+              <span id="dayForcastOne"
+                class="bg-danger px-3 py-1 rounded-5 text-white text-capitalize fw-semibold">tomorrow</span>
+              <p id="conditionTextTwo" class="text-warning fw-semibold fs-4 mt-3 mb-0">mist</p>
+              <img src="Images/day/335.png" alt="" id="conditionIconTwo">
+              <div class="mimax d-flex justify-content-center align-items-center">
+                <p class="text-white me-1">Min: <span id="minTomorrow">16</span><sup>o</sup>C</p>
+                <p class="text-white ms-1">Max: <span id="maxTomorrow">25</span><sup>o</sup>C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="forcastDayTwo text-center" id="forcastDayTwo">
+              <span id="dayForcastTwo"
+                class="bg-danger px-3 py-1 rounded-5 text-white text-capitalize fw-semibold">tomorrow</span>
+              <p id="conditionTextThree" class="text-warning fw-semibold fs-4 mt-3 mb-0">mist</p>
+              <img src="Images/day/332.png" alt="" id="conditionIconThree">
+              <div class="mimax d-flex justify-content-center align-items-center">
+                <p id="minAfterThree" class="text-white me-1">Min: <span id="minThree">13</span><sup>o</sup>C</p>
+                <p id="maxAfterThree" class="text-white ms-1">Max: <span id="maxThree">22</span><sup>o</sup>C</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/main.js"></script>
+</body>
+
+</html>
